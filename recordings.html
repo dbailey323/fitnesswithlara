@@ -1,0 +1,247 @@
+<!doctype html lang="en">
+
+<head>
+  <title>On Demand Workouts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/loginstyle.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="text-transform: uppercase; font-weight: 700; color: #e91e63;"
+        href="index.html">Fitness with Lara</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="liveclasses.html">Live Classes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pt.html">Personal Training</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://babybodybeautiful.co.uk/">Pre and Postnatal Fitness</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="recordings.html">On Demand Workouts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutme.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reviews.html">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactme.html">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="login_div" class="main-div">
+    <div class="imgBx">
+      <img src="Images/bg.webp" alt="">
+    </div>
+    <div class="contentBx">
+      <div class="formBx">
+        <h2>Sign in</h2>
+        <div class="inputBx">
+          <span>Email Address</span>
+          <input type="email" placeholder="Email..." id="email_field" required />
+        </div>
+        <div class="inputBx">
+          <span>Password</span>
+          <input type="password" placeholder="Password..." id="password_field" required />
+        </div>
+        <div class="inputBx">
+          <button onclick="login()">Sign in</button>
+        </div>
+        <div class="inputBx">
+          <p>Forgotten Password? <a href="#" onclick="forgotpassword()">Click here</a></p>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+
+    <img src="Images/bg.webp" class="img-fluid rounded mx-auto d-block" alt="header"><br>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 text-center">
+      <h2>Welcome</h2>
+      <p id="user_para"></p>
+      <button onclick="logout()">Logout</button><br><br>
+    </div>
+      </div>
+
+    <img src="Images/equipment.webp" class="img-fluid rounded mx-auto d-block" style="margin-top: 10px; padding: 20px;"
+      alt="header"><br><br>
+
+    <div class="row">
+    <div class="col-md-6 col-lg-4">
+    <div class="container-video text-center">
+      <input type="image" class="responsive-iframe" src="Images/On Demand/HIITAccumultor1(30).png"
+        onclick=" window.open('https://drive.google.com/file/d/1EiHPnzDzrtfzY3N_8-WJSIV_iuDWz6zj/view')">
+    </div></div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="container-video text-center">
+        <input type="image" class="responsive-iframe" src="Images/On Demand/HIITAccumulator2(45).png"
+          onclick=" window.open('https://drive.google.com/file/d/1X1D23zApiYZP0nUrFv33KVbBJHQWvq5w/view')">
+    </div></div>
+
+      <div class="col-md-6 col-lg-4">
+    <div class="container-video text-center">
+      <input type="image" class="responsive-iframe" src="Images/On Demand/HIIT30.png"
+        onclick=" window.open('https://drive.google.com/file/d/1P3q0ByHzV0DSQ6bQWCjmrJF63D-6DaD0/view')">
+    </div>
+      </div>
+
+        <div class="col-md-6 col-lg-4">
+    <div class="container-video text-center">
+      <input type="image" class="responsive-iframe" src="Images/On Demand/HIITDirty30(45).png"
+        onclick=" window.open('https://drive.google.com/file/d/1rBGs393BWCJI1tez1Km6l7uSHyuSmHbv/view')">
+    </div></div>
+
+      <div class="col-md-6 col-lg-4">
+    <div class="container-video text-center">
+      <input type="image" class="responsive-iframe" src="Images/On Demand/BootyBurner1(45).png"
+        onclick=" window.open('https://drive.google.com/file/d/182ATea6iy6JEBzNjcmN08oSOFHCyGD6t/view')">
+    </div></div>
+
+      <div class="col-md-6 col-lg-4">
+    <div class="container-video text-center">
+      <input type="image" class="responsive-iframe" src="Images/On Demand/Tonezone(45).png"
+        onclick=" window.open('https://drive.google.com/file/d/1A4vk-EU8wFfd7Y2r-3mUfCo9ZVcqWaL8/view')">
+    </div></div>
+
+      <div class="col-md-6 col-lg-4">
+    <div class="container-video text-center">
+      <input type="image" class="responsive-iframe" src="Images/On Demand/Stretchandrelax1(45).png"
+        onclick=" window.open('https://drive.google.com/file/d/1DHJzlskMtVdRaT3nVZTLbcQHm5bN6ywp/view')">
+    </div></div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="container-video text-center">
+        <input type="image" class="responsive-iframe" src="Images/On Demand/Stretchandrelax2(45).png"
+          onclick=" window.open('https://drive.google.com/file/d/1dDekq1JwlQokfpSlZuwl6rG6Oq5k2MU4/view')">
+    </div></div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="container-video text-center">
+        <input type="image" class="responsive-iframe" src="Images/On Demand/barretone1(45).png"
+          onclick=" window.open('https://drive.google.com/file/d/1aBU_UZzVDq5FOh--fnQosH95af9odCD8/view')">
+      </div></div>
+
+
+      <div class="col-md-6 col-lg-4">
+        <div class="container-video text-center">
+          <input type="image" class="responsive-iframe" src="Images/On Demand/barretone2(30).png"
+            onclick=" window.open('https://drive.google.com/file/d/1IgfhRIHTgIu4B_D2H9WFzS-3_OM_6SmI/view')">
+        </div></div>
+
+      <div class="col-md-6 col-lg-4">
+    <div class="container-video text-center">
+      <input type="image" class="responsive-iframe" src="Images/On Demand/barretone3(45).png"
+        onclick=" window.open('https://drive.google.com/file/d/1aej9VoAFZ6Cp9grh8eqAgjwRknjDVR4a/view')">
+    </div></div>
+
+      <div class="col-md-6 col-lg-4">
+    <div class="container-video text-center">
+      <input type="image" class="responsive-iframe" src="Images/On Demand/HIIT54321(45).png"
+        onclick=" window.open('https://drive.google.com/file/d/1w7Rzq4ipck_sZfXNQfw_I-gOskdtaBNW/view')">
+    </div></div>
+
+      <div class="col-md-6 col-lg-4">
+    <div class="container-video text-center">
+      <input type="image" class="responsive-iframe" src="Images/On Demand/upperbodyblast1(45).png"
+        onclick=" window.open('https://drive.google.com/file/d/1cBNglF8eUsOkTQm6mwyz3dvR8f3D6SwD/view')">
+    </div></div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="container-video text-center">
+        <input type="image" class="responsive-iframe" src="Images/On Demand/upperbodyblast2(45).png"
+          onclick=" window.open('https://drive.google.com/file/d/1p85tlIJLTunBcrU_c6QITzdAnmxpNtsm/view')">
+      </div></div>
+
+
+      <div class="col-md-6 col-lg-4">
+        <div class="container-video text-center">
+          <input type="image" class="responsive-iframe" src="Images/On Demand/upperbodyblast3(45).png"
+            onclick=" window.open('https://drive.google.com/file/d/1atSEYc8hVFmP2P1sSVcfRptyo9tuxaP_/view')">
+        </div></div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="container-video text-center">
+        <input type="image" class="responsive-iframe" src="Images/On Demand/abblaster1(45).png"
+          onclick=" window.open('https://drive.google.com/file/d/1BZ9ELO0MpCAxQSS9TQCCG7EVy89WUjdI/view')">
+      </div></div>
+
+      <div class="col-md-6 col-lg-4">
+    <div class="container-video text-center">
+      <input type="image" class="responsive-iframe" src="Images/On Demand/abblaster2(45).png"
+        onclick=" window.open('https://drive.google.com/file/d/1zUuH_LNkvJDDkFxUG9N7kblTF4S1gT-a/view')">
+    </div></div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBW0knZeKW3vDoepXBc8tixxT6Y6qm9XQ8",
+    authDomain: "fitnesswithlara-3e11d.firebaseapp.com",
+  };
+  firebase.initializeApp(config);
+
+  function login() {
+    const email = document.getElementById("email_field").value;
+    const password = document.getElementById("password_field").value;
+    const errorMessageElement = document.getElementById("error_message");
+
+    // Form validation
+    if (!email || !password) {
+      errorMessageElement.textContent = "Please enter both email and password.";
+      return;
+    }
+
+    // Show loading spinner/message during login process
+    // Add code here to toggle visibility of a loading element
+
+    // Firebase authentication
+    firebase.auth().signInWithEmailAndPassword(email, password)
+      .then((userCredential) => {
+        // Login successful, handle what to do next (e.g., redirect to home page)
+      })
+      .catch((error) => {
+        // Handle login error and display error message
+        errorMessageElement.textContent = "Login failed: " + error.message;
+      });
+  }
+</script>
+  <script src="js/recordings.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

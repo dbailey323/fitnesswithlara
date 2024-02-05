@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar a {
+    font-size: 12px;
+}
+
+.navbar .navbar-brand {
+    font-size: 18px;
+}
+
+.dimension {
+    width: 500px;
+    height: 100%;
+}
+
+.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.container p {
+    margin: 10px 0 20px;
+    padding: 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+.container a.one {
+    display: inline-block;
+    width: 25%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.container a.one {
+    background: #ff00de;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    max-width: 500px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container a.two {
+    display: inline-block;
+    width: 25%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.container a.two {
+    background: #ff00de;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    max-width: 500px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-tabs {
+    border-bottom: none !important;
+    justify-content: center;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #ff00de !important;
+    color: #fff !important;
+    border: 3px solid #ff00de !important;
+}
+
+.nav-tabs .nav-link {
+    background-color: #fff;
+    color: #ff00de;
+    border: 2px solid #ff00de !important;
+    font-size: 10px;
+    margin-right: 0.2rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+.tab-content {
+    padding: 5px;
+}
+
+.tab-content .row {
+    margin-top: 10px;
+}
+
+.tab-content .tab-pane .row .col {
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+}
+
+.tab-content .tab-pane .row .col h3 {
+    color: #000;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ff00de;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.tab-content .tab-pane .row .col h6 {
+    color: #000;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    border-bottom: 4px solid #ff00de;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.tab-content .tab-pane .row .col h5 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: relative;
+    color: #607d8b;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.tab-content .tab-pane .row .col p {
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 14px;
+    color: #607d8b;
+}
+
+
+
+.tab-content .tab-pane .row .col a {
+    display: inline-block;
+    width: 25%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.tab-content .tab-pane .row .col a.record {
+    display: inline-block;
+    width: 50%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.tab-content .tab-pane .row .col a.dance {
+    background: #ff00de;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    max-width: 500px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tab-content .tab-pane .row .col a.bands {
+    background: #e9e61e;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    max-width: 500px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tab-content .tab-pane .row .col a.fight {
+    background: #e95e1e;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    max-width: 500px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tab-content .tab-pane .row .col a.record {
+    background: #ff00de;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    max-width: 500px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .dimension {
+        display: none;
+    }
+
+    .container a.one {
+        font-size: 9px;
+        width: 40%;
+    }
+
+    .container a.two {
+        font-size: 8px;
+        width: 40%;
+    }
+
+    .tab-content .tab-pane .row .col a {
+        width: 50%;
+    }
+}

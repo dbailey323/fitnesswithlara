@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar a {
+    font-size: 12px;
+}
+
+.navbar .navbar-brand {
+    font-size: 18px;
+}
+
+body {
+    background-color: #e5f4f3 !important;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 0 0;
+    background: #e5f4f3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+.banner .textBox {
+    position: relative;
+    max-width: 600px;
+    z-index: 2;
+}
+
+.banner .textBox h2 {
+    color: #111;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.banner .textBox h2 span {
+    color: #111;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.banner .textBox p {
+    color: #111;
+    font-size: 1.2em;
+}
+
+.banner .textBox a {
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    color: #111;
+    padding: 15px 25px;
+    text-decoration: none;
+    border: #111 solid;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 5%;
+}
+
+.banner .textBox a:hover {
+    background: #ff00de;
+}
+
+.banner .imgBox {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    z-index: 2;
+}
+
+.banner .imgBox img {
+    position: absolute;
+    bottom: 0;
+    height: 90%;
+    z-index: 10000;
+}
+
+.banner-container {
+    position: relative;
+}
+
+.contact {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.contact a {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 4px #000 !important;
+    background-color: #e5f4f3;
+    color: #000;
+}
+
+.sci {
+    position: absolute;
+    bottom: 20px;
+    letter-spacing: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.sci li a img {
+    transform: scale(0.5);
+}
+
+@media (max-width: 991px) {
+    .banner {
+        padding: 0 0 0;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .banner .textBox {
+        max-width: 100%;
+    }
+
+    .banner .textBox h2 span {
+        font-size: 1em;
+    }
+
+    .sci {
+        z-index: 1000;
+        left: initial;
+        right: 10px;
+        flex-direction: column;
+    }
+}

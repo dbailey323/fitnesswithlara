@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Booking</title>
+    <link rel="stylesheet" href="css/classes.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" style="text-transform: uppercase; font-weight: 700; color: #e91e63;"
+                    href="index.html">Fitness with Lara</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="liveclasses.html">Live Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pt.html">Personal Training</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://babybodybeautiful.co.uk/">Pre and Postnatal Fitness</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recordings.html">On Demand Workouts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutme.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reviews.html">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactme.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <!-- Class Information Section -->
+    <div class="container">
+        <h1 class="mt-4">Live Classes</h1>
+        <p>Booking is required for all classes.</p>
+
+        <!-- Improved styling for each class section -->
+        <div class="row border g-0 rounded shadow-sm">
+            <div class="col-auto">
+                <img src="Images/dancetonenew.png" class="img-thumbnail dimension" alt="Bumps Image">
+            </div>
+            <div class="col p-4">
+                <h3 class="card-title">Dance&Tone Express</h3><br>
+                <h4>Mondays @ 6.30pm</h4>
+                <h4>Mountsorrel Memorial Centre</h4>
+                <!-- Use a placeholder element to display dates dynamically -->
+                <div id="classDatessjlv"></div><br>
+                <p class="card-text">DANCE&TONE is a 30 minute dance class set to current and chart music with a
+                    variety
+                    of dance styles
+                    designed to help you lose weight, tone up and increase your fitness levels.</p>
+                <p class="card-text">The fun atmosphere means you won’t even realise you are exercising!</p>
+                <div id="classDatesskni"></div><br>
+
+            </div>
+        </div>
+
+        <div class="row border g-0 rounded shadow-sm">
+            <div class="col-auto">
+                <img src="Images/strongstretched.jpg" class="img-thumbnail dimension" alt="Bumps Image">
+            </div>
+            <div class="col p-4">
+                <h3 class="card-title">Strong&Stretched</h3><br>
+                <h4>Mondays @ 7.00pm</h4>
+                <h4>Mountsorrel Memorial Centre</h4>
+                <!-- Use a placeholder element to display dates dynamically -->
+                <div id="classDatesszew"></div><br>
+                <p class="card-text">Are you ready to create a shaped, sculpted and toned body? All whilst
+                    lengthening
+                    muscles and releasing the stress on everyday? Helping to prevent injuries and helping you to
+                    feel
+                    powerful and connected to yourself? Low impact, high burn?</p>
+                <p class="card-text">Then STRONG&STRETCHED is here! 30 minutes to blast through some stretch and
+                    conditioning exercises where we speed up and hold movements to make your muscles shake and burn
+                    followed by a full body stretch to release the tension and hopefully help those next day DOMS!
+                    So
+                    don’t think it’s going to be easy.. but it will be worth it!</p>
+
+            </div>
+        </div>
+
+        <div class="row border g-0 rounded shadow-sm">
+            <div class="col-auto">
+                <img src="Images/fightfiercenew.png" class="img-thumbnail dimension" alt="Bumps Image">
+            </div>
+            <div class="col p-4">
+                <h3 class="card-title">Fight Fierce</h3><br>
+                <h4>Thursdays @ 7.00pm</h4>
+                <h4>Methodist Church Centre</h4>
+                <!-- Use a placeholder element to display dates dynamically -->
+                <div id="classDatess0pg"></div><br>
+                <p class="card-text">FIGHT FIERCE is a martial arts inspired workout set to fresh tunes to let out
+                    your
+                    inner fierceness. Punch, kick and strike your way to fitness whilst letting out any aggression
+                    or
+                    stress. Warrior mode is on!!</p>
+                <p class="card-text">No martial arts experience necessary and non contact.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="js/classestest.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.alertbanner {
+    background: #ff00de;
+}
+
+.alertbanner-content {
+    padding: 16px;
+    max-width: 2000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.alertbanner-text {
+    flex-grow: 1;
+    line-height: 1.4;
+    font-size: 20px;
+}
+
+.alertbanner-text a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.alertbanner-text a:hover {
+    color: white;
+    font-weight: 600;
+}
+
+.alertbanner-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.alertbanner-text,
+.alertbanner-close>span {
+    color: #ffffff;
+}
