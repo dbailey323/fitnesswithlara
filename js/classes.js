@@ -38,5 +38,5 @@ document.addEventListener('DOMContentLoaded', function () {
     displayClassDates("sjlv", "2024-01-22", 6, "183000", [], 'pink');
     displayClassDates("skni", "2024-01-22", 6, "183000", [], 'coral');
     displayClassDates("szew", "2024-01-22", 6, "190000", [], 'yellow');
-    displayClassDates("s0pg", "2024-01-25", 6, "190000", [], 'green');
+    displayClassDates("s0pg", "2024-01-25", 6, "190000", [3], 'green');
 });
