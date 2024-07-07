@@ -35,8 +35,7 @@ function displayClassDates(className, startDate, numWeeks, timeSuffix, skippedWe
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    displayClassDates("sjlv", "2024-07-01", 2, "183000", [], 'pink');
-    displayClassDates("skni", "2024-07-01", 2, "183000", [], 'coral');
-    displayClassDates("szew", "2024-07-01", 2, "190000", [], 'yellow');
-    displayClassDates("s0pg", "2024-05-02", 4, "190000", [], 'green');
+    displayClassDates("sjlv", "2024-07-08", 7, "183000", [], 'pink');
+    displayClassDates("skni", "2024-07-08", 7, "183000", [], 'coral');
+    displayClassDates("szew", "2024-07-08", 7, "190000", [], 'yellow');
 });
