@@ -3,13 +3,15 @@ function displayClassDates(className, startDate, numWeeks, timeSuffix, skippedWe
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
-    for (let i = 0; i < numWeeks; i++) {
-        const currentDate = new Date(startDate);
-        currentDate.setDate(currentDate.getDate() + (i * 7));
-        const nextDay = new Date(currentDate);
-        nextDay.setDate(currentDate.getDate() + 1);
+    const start = new Date(startDate);
+    start.setHours(0, 0, 0, 0);
 
-        if (!skippedWeeks.includes(i + 1) && nextDay > today) {
+    for (let i = 0; i < numWeeks; i++) {
+        const currentDate = new Date(start);
+        currentDate.setDate(start.getDate() + (i * 7));
+
+        // Check if the week should be skipped or if the date has passed
+        if (!skippedWeeks.includes(i + 1) && currentDate > today) {
             const formattedDate = currentDate.toLocaleDateString("en-GB", { month: "short", day: "numeric" });
             const linkDate = `${currentDate.getFullYear()}${(currentDate.getMonth() + 1).toString().padStart(2, '0')}${currentDate.getDate().toString().padStart(2, '0')}`;
             const link = `https://bookwhen.com/fitnesswithlara#focus=ev-${className}-${linkDate}${timeSuffix}`;
@@ -19,7 +21,7 @@ function displayClassDates(className, startDate, numWeeks, timeSuffix, skippedWe
             linkElement.setAttribute('href', link);
             linkElement.setAttribute('target', '_blank');
             linkElement.innerHTML = `<small>${formattedDate}</small>`;
-            linkElement.style.backgroundColor = color; // Set the color dynamically
+            linkElement.style.backgroundColor = color;
             linkElement.style.color = 'black';
 
             // Add a span for margin
