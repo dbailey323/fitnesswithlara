@@ -1,4 +1,3 @@
-
 function displayClassDates(className, startDate, numWeeks, timeSuffix, skippedWeeks = [], color) {
     const classDatesContainer = document.getElementById(`classDates${className}`);
     const today = new Date();
@@ -21,7 +20,7 @@ function displayClassDates(className, startDate, numWeeks, timeSuffix, skippedWe
             linkElement.setAttribute('target', '_blank');
             linkElement.innerHTML = `<small>${formattedDate}</small>`;
             linkElement.style.backgroundColor = color; // Set the color dynamically
-            linkElement.style.color = 'black'
+            linkElement.style.color = 'black';
 
             // Add a span for margin
             const span = document.createElement('span');
