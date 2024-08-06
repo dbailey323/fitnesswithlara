@@ -34,3 +34,9 @@ function displayClassDates(className, startDate, numWeeks, timeSuffix, skippedWe
         }
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    displayClassDates("sjlv", "2024-08-12", 8, "183000", [], 'pink');  // Skipping weeks 2 and 4
+    displayClassDates("skni", "2024-08-12", 8, "183000", [], 'coral');  // Skipping week 3
+    displayClassDates("szew", "2024-08-12", 8, "190000", [], 'yellow');  // No weeks skipped
+});
