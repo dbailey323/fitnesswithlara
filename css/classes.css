@@ -36,7 +36,7 @@ body {
 
 .container .row .col h3 {
     color: #607d8b;
-    font-weight: 500;
+    font-weight: 500; /* Corrected from 500px */
     font-size: 1.8em;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -48,7 +48,7 @@ body {
 
 .container .row .col h4 {
     color: #607d8b;
-    font-weight: 500px;
+    font-weight: 500; /* Corrected from 500px */
     font-size: 1.2em;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -63,7 +63,7 @@ body {
     margin-bottom: 5px;
     display: relative;
     color: #fff;
-    font-weight: 300px;
+    font-weight: 300; /* Corrected from 300px */
     letter-spacing: 1px;
     background-color: #7ae1d5;
     padding: 10px;
@@ -74,7 +74,7 @@ body {
     margin: 10px 0 0;
     padding: 0;
     font-size: 16px;
-    font-weight: 200px;
+    font-weight: 200; /* Corrected from 200px */
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -89,6 +89,9 @@ body {
     background: transparent;
     border-radius: 15px;
     margin-top: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .container .row .col a {
@@ -96,11 +99,10 @@ body {
     color: #fff;
     outline: none;
     border: none;
-    cursor: pointer;
     max-width: 150px;
-    cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer; /* Removed the redundant cursor property */
 }
 
 @media (max-width: 767px) {
