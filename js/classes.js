@@ -3,6 +3,10 @@ function displayClassDates(className, startDate, numWeeks, timeSuffix, skippedWe
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
+    // Create a 'tomorrow' date for comparison
+    const tomorrow = new Date(today);
+    tomorrow.setDate(today.getDate() + 1);
+
     const start = new Date(startDate);
     start.setHours(0, 0, 0, 0);
 
@@ -11,7 +15,7 @@ function displayClassDates(className, startDate, numWeeks, timeSuffix, skippedWe
         currentDate.setDate(start.getDate() + (i * 7));
 
         // Check if the week should be skipped or if the date has passed
-        if (!skippedWeeks.includes(i + 1) && currentDate > today) {
+        if (!skippedWeeks.includes(i + 1) && currentDate >= tomorrow) {
             const formattedDate = currentDate.toLocaleDateString("en-GB", { month: "short", day: "numeric" });
             const linkDate = `${currentDate.getFullYear()}${(currentDate.getMonth() + 1).toString().padStart(2, '0')}${currentDate.getDate().toString().padStart(2, '0')}`;
             const link = `https://bookwhen.com/fitnesswithlara#focus=ev-${className}-${linkDate}${timeSuffix}`;
