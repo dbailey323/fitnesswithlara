@@ -77,7 +77,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 1px;
-    color: #607d8b;
+    color: #FFD700;
     background: transparent;
     border-radius: 15px;
     margin-top: 10px;
@@ -88,7 +88,7 @@ body {
 
 .container .row .col a {
     background: #7ae1d5;
-    color: #fff;
+    color: #FFD700;
     outline: none;
     border: none;
     max-width: 150px;
